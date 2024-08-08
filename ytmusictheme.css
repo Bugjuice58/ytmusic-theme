@@ -1,0 +1,162 @@
+html {
+    background-color: var(--ytmusic-player-page-background) !important;
+    --ytd-scrollbar-scrubber_-_background: var(--ytmusic-player-page-background);
+    --ytmusic-scrollbar-width: 0px !important;
+    --ytd-scrollbar-width: 0px !important;
+    --lyric-width: 100% !important;
+    --size-lyrics: 1 !important;
+}
+
+html::-webkit-scrollbar-thumb {
+    border: 0px solid black !important;
+    display: none;
+}
+
+html::-webkit-scrollbar {
+    border: 0px solid black !important;
+    background-color: var(--ytmusic-player-page-background) !important;
+    display: none;
+}
+
+#player,#song-image,#song-media-window,#song-video,#thumbnail > img {
+    border-radius: 25px !important;
+    border: 0px black !important;
+}
+
+.thumbnail,#play-button,#img {
+    border-radius: 1px !important;
+    border: 0px black !important;
+}
+
+#layout > ytmusic-player-bar {
+    margin: 10px !important;
+    width: calc(100vw - 20px) !important;
+    border: 0px solid black !important;
+    border-radius: 10px !important;
+}
+
+#layout {
+    background-color: var(--ytmusic-player-page-background) !important;
+}
+
+#toggleBar {
+    background-color: var(--ytmusic-player-page-background) !important;
+    filter: brightness(150%);
+}
+
+#toggleButton {
+    background-color: var(--ytmusic-player-page-background) !important;
+    filter: brightness(200%);
+}
+
+#left-content > ytmusic-logo > a > picture:nth-child(1) > img { /* TODO: Change YTMUSIC Logo color from red to album's color -- possibly js job */
+    color: blue;
+}
+
+ytmusic-app {
+    background-color: var(--ytmusic-player-page-background) !important;
+}
+
+ytmusic-app-layout>[slot=player-bar] {
+    width: calc(100vw - var(--ytmusic-scrollbar-width) - 10px) !important;
+}
+
+#progress-bar {
+    width: calc(100vw - 32px - var(--ytmusic-scrollbar-width)) !important;
+    --paper-slider-active-color: var(--ytmusic-player-page-background) !important;
+    --paper-slider-knob-color: var(--ytmusic-player-page-background) !important;
+    left: -8px !important;
+}
+
+#progressContainer {
+    filter: brightness(250%);
+}
+
+#sliderKnob {
+    filter: brightness(250%);
+}
+
+#player-bar-background {
+    display: none;
+}
+
+#tabsContent.tp-yt-paper-tabs > :not(#selectionBar) {
+    border-radius: 1000px !important;
+    margin: 5px !important;
+    height: auto !important;
+    backdrop-filter: brightness(1.2);
+}
+
+tp-yt-paper-tab.iron-selected.ytmusic-player-page {
+    backdrop-filter: brightness(1.6) !important;
+}
+
+tp-yt-paper-tabs.ytmusic-player-page {
+    border: none !important;
+}
+
+#selectionBar {
+    display: none;
+}
+
+#mini-guide-background {
+    display: none;
+}
+
+ytmusic-app-layout[player-page-open] #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-divider.ytmusic-app-layout, ytmusic-app-layout[is-bauhaus-sidenav-enabled][player-page-open] #mini-guide-background.ytmusic-app-layout {
+    opacity: 1 !important;
+    border-radius: 0px 0px 40px 40px;
+    backdrop-filter: brightness(1.4) !important;
+}
+
+#nav-bar-divider {
+    display: none;
+}
+
+ytmusic-player-queue-item {
+    background-color: var(--yt-spec-black-pure);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 0px solid black !important;
+    border-bottom: 0px !important;
+}
+
+#synced-lyrics-container > div > yt-formatted-string.warning-lyrics.description.ytmusic-description-shelf-renderer {
+    /* content: "Lyrics may not be exact" !important;
+    font-size: 12px !important; */
+    /* ^^ For later */
+    display: none;
+
+}
+
+.synced-line {
+    transition: 0.2s;
+}
+
+.current {
+    text-shadow: 0 0 10px #fff;
+    transition: 0.2s;
+}
+
+ytmusic-player-queue-item[play-button-state=loading], ytmusic-player-queue-item[play-button-state=playing], ytmusic-player-queue-item[play-button-state=paused] {
+    background-color: var(--yt-spec-black-pure-alpha-5) !important;
+}
+
+ytmusic-player {
+    display: inline-block;
+    position: relative;
+    background-color: #606060;
+    color: #fff;
+    --ytmusic-mini-player-spacing: 24px;
+    --ytmusic-player-bezel-size: 52px;
+    --ytmusic-player-bezel-icon-size: 36px;
+    --ytmusic-player-overlay-gradient: linear-gradient(var(--yt-spec-static-overlay-background-light) 0%,rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%) !important;
+    --ytmusic-player-padding: 16px;
+}
+
+ytmusic-playlist-panel-video-wrapper-renderer {
+    width: 30vw !important;
+}
+
+/* var(--ytmusic-background) */
